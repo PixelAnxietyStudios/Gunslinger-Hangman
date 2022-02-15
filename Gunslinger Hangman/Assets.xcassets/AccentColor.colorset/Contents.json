@@ -1,0 +1,26 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "platform" : "osx",
+        "reference" : "controlColor"
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "osx",
+        "reference" : "controlBackgroundColor"
+      },
+      "idiom" : "universal",
+      "locale" : "en"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}

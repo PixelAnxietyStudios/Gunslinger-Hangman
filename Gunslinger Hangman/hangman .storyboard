@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gunslinger Hangman-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController title="Gunslinger Hangman" storyboardIdentifier="hangmanViewController" id="bU7-R8-ocO" customClass="hangmanViewController" customModule="Gunslinger_Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" identifier="hangmanViewController" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="605" height="448"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ia9-EA-xHf">
+                                <rect key="frame" x="0.0" y="20" width="605" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="sceneNew" id="gU9-Hx-4Im"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-rT-DZW">
+                                <rect key="frame" x="-1" y="186" width="351" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="sceneNew" id="aHq-dX-5NB"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-9f-EMv">
+                                <rect key="frame" x="341" y="0.0" width="264" height="428"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="woodwall" id="yap-cb-ZuF"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-uB-AoX">
+                                <rect key="frame" x="20" y="220" width="120" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="cowboy" id="VmN-S0-RRq"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijt-6J-3ST">
+                                <rect key="frame" x="-1" y="0.0" width="342" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="woodBlock" id="Zg9-c9-xZv"/>
+                            </imageView>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-87-XSq">
+                                <rect key="frame" x="359" y="366" width="54" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="aLetter" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" sound="gunShot" inset="2" id="p6T-8l-xg3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="aLetterPressed:" target="bU7-R8-ocO" id="2NA-dR-isn"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSn-to-LvA">
+                                <rect key="frame" x="419" y="366" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cO9-PO-b3h">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="bLetterPressed:" target="bU7-R8-ocO" id="mh2-S4-iMa"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abh-7t-fje">
+                                <rect key="frame" x="477" y="366" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G4N-lU-LQA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cLetterPressed:" target="bU7-R8-ocO" id="66O-ko-S1h"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-if-4uP">
+                                <rect key="frame" x="362" y="309" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="eLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Fft-Dt-qAV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="eLetterPressed:" target="bU7-R8-ocO" id="IEV-ax-fgP"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hm-It-9Qp">
+                                <rect key="frame" x="419" y="309" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="XUk-uz-8zw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="fLetterPressed:" target="bU7-R8-ocO" id="5Ea-L3-Qn4"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wp-CZ-3v8">
+                                <rect key="frame" x="478" y="309" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="gLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="U3B-4t-vqs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="gLetterPressed:" target="bU7-R8-ocO" id="8pt-wp-Zwj"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjr-uM-xTu">
+                                <rect key="frame" x="537" y="309" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="hLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jcX-jy-eoZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="hLetterPressed:" target="bU7-R8-ocO" id="wUZ-5O-GnN"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCh-0t-hEh">
+                                <rect key="frame" x="362" y="251" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="iLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9Wz-FO-gS8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="iLetterPressed:" target="bU7-R8-ocO" id="Pql-V5-UV1"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y88-GW-Ngj">
+                                <rect key="frame" x="420" y="251" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="jLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Uhw-8v-hZ3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jLetterPressed:" target="bU7-R8-ocO" id="x3W-Wd-aJz"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwe-k8-0hk">
+                                <rect key="frame" x="478" y="251" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="kLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9VF-d6-bUI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="kLetterPressed:" target="bU7-R8-ocO" id="jGM-OO-4GH"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-H9-Mcz">
+                                <rect key="frame" x="537" y="251" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="lletter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JmV-sH-AtB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="lLetterPressed:" target="bU7-R8-ocO" id="OFy-yq-OWS"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Bi-OA-NOF">
+                                <rect key="frame" x="362" y="193" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="mLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YVa-Nw-ZSj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mLetterPressed:" target="bU7-R8-ocO" id="UhR-AC-ud5"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7D-p7-erc">
+                                <rect key="frame" x="420" y="193" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="nLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="u06-9b-k6d">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nLetterPressed:" target="bU7-R8-ocO" id="vqx-TB-Hnz"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-qF-SbQ">
+                                <rect key="frame" x="478" y="193" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="oLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6Od-4K-JRI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="oLetterPressed:" target="bU7-R8-ocO" id="lRy-9K-GTp"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9J-up-vTU">
+                                <rect key="frame" x="537" y="193" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="pLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="A9g-FE-mHR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pLetterPressed:" target="bU7-R8-ocO" id="OSw-FG-WSj"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4G-br-CUb">
+                                <rect key="frame" x="420" y="134" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="rLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VGc-cP-mjd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="rLetterPressed:" target="bU7-R8-ocO" id="bYQ-fm-idR"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RIt-4w-501">
+                                <rect key="frame" x="478" y="134" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="sLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="G1X-lg-g1Z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="sLetterPressed:" target="bU7-R8-ocO" id="2bz-cY-tiR"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPi-hs-j2M">
+                                <rect key="frame" x="537" y="134" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="tLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="BIF-c9-KOK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tLetterPressed:" target="bU7-R8-ocO" id="igf-ED-r52"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2O-21-PT8">
+                                <rect key="frame" x="362" y="134" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="qLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Z4j-tF-68q">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="qLetterPressed:" target="bU7-R8-ocO" id="AnZ-7H-O3M"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-Hs-Wkj">
+                                <rect key="frame" x="362" y="76" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="uLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wQu-7e-H6s">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="uLetterPressed:" target="bU7-R8-ocO" id="lbQ-16-bQn"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNa-PK-VvS">
+                                <rect key="frame" x="420" y="76" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="vLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Fs9-0s-5Eb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="vLetterPressed:" target="bU7-R8-ocO" id="swI-QI-yDh"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULT-mx-6O3">
+                                <rect key="frame" x="478" y="76" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="wLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="y1D-1v-IZx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="wLetterPressed:" target="bU7-R8-ocO" id="owb-NU-WTj"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Al-vc-4Mp">
+                                <rect key="frame" x="537" y="76" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="xLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Aha-Is-MMW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="xLetterPressed:" target="bU7-R8-ocO" id="0tQ-42-s4Z"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBl-Iz-PQ5">
+                                <rect key="frame" x="420" y="22" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="yLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7n7-rV-h91">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="yLetterPressed:" target="bU7-R8-ocO" id="eO3-Rg-cja"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HeF-rB-m3e">
+                                <rect key="frame" x="478" y="20" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="zLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3MU-ek-x5J">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="zLetterPressed:" target="bU7-R8-ocO" id="gHB-dL-5Qu"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g6-mR-Yey">
+                                <rect key="frame" x="30" y="23" width="283" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="longFrame" id="4Y6-Mp-b33"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NDx-di-Ylx">
+                                <rect key="frame" x="221" y="103" width="103" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="gactus" id="QXK-cq-6Mg"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJS-xP-AKT">
+                                <rect key="frame" x="28" y="115" width="88" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="6BulletCounter" id="FzF-iZ-2v7"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0j-tx-R00">
+                                <rect key="frame" x="195" y="220" width="129" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="renegade" id="BMK-L1-XVC"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YpV-vU-jxi">
+                                <rect key="frame" x="43" y="49" width="255" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="charWrapping" alignment="center" id="uZd-bx-g2p">
+                                    <font key="font" metaFont="system" size="21"/>
+                                    <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ec-93-gzd">
+                                <rect key="frame" x="124" y="106" width="331" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="woodBlock" id="oom-O3-rI3"/>
+                            </imageView>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRf-yG-bBW">
+                                <rect key="frame" x="160" y="123" width="261" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="playAgain" imagePosition="only" alignment="center" imageScaling="axesIndependently" inset="2" id="OuJ-9a-cZ2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="playAgainPressed:" target="bU7-R8-ocO" id="Vix-Xy-Gfv"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D00-ky-bfS">
+                                <rect key="frame" x="0.0" y="428" width="23" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="exitButton" imagePosition="only" alignment="center" imageScaling="axesIndependently" inset="2" id="6Sk-wv-1CY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="exitButtonPressed:" target="bU7-R8-ocO" id="ZFI-Pe-cEV"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AoP-n9-m8c">
+                                <rect key="frame" x="535" y="353" width="48" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="dLetter" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jjl-rW-d6O">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dLetterPressed:" target="bU7-R8-ocO" id="3zf-wm-H13"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPa-Fh-n3l">
+                                <rect key="frame" x="132" y="241" width="314" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="The word was Paint" id="dpU-Dr-bd0">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8r3-bU-2hg">
+                                <rect key="frame" x="184" y="273" width="210" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="youLost" id="g6N-si-bBd"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-zA-CwQ">
+                                <rect key="frame" x="184" y="428" width="188" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="gunslingerTitle" id="GdD-Ig-EpN"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="aLetter" destination="6sr-87-XSq" id="NKJ-zW-GHY"/>
+                        <outlet property="bLetter" destination="KSn-to-LvA" id="DD2-3X-f1E"/>
+                        <outlet property="bulletCounter" destination="eJS-xP-AKT" id="T2D-Ov-cD0"/>
+                        <outlet property="cLetter" destination="abh-7t-fje" id="7vf-mN-Qsk"/>
+                        <outlet property="cowboy" destination="VmN-S0-RRq" id="n7l-mb-2tX"/>
+                        <outlet property="dLetter" destination="AoP-n9-m8c" id="0Pr-T8-pEW"/>
+                        <outlet property="eLetter" destination="NcH-if-4uP" id="ToM-3d-jWJ"/>
+                        <outlet property="exitButton" destination="D00-ky-bfS" id="FT9-MM-aXG"/>
+                        <outlet property="fLetter" destination="4hm-It-9Qp" id="Z2F-cu-1z8"/>
+                        <outlet property="gLetter" destination="2wp-CZ-3v8" id="D81-Eg-UBd"/>
+                        <outlet property="hLetter" destination="tjr-uM-xTu" id="4l1-aq-yIK"/>
+                        <outlet property="iLetter" destination="vCh-0t-hEh" id="Zf3-nV-EZa"/>
+                        <outlet property="jLetter" destination="Y88-GW-Ngj" id="Q99-SO-euf"/>
+                        <outlet property="kLetter" destination="Iwe-k8-0hk" id="vvi-uY-uFw"/>
+                        <outlet property="lLetter" destination="fw9-H9-Mcz" id="Peg-os-5ez"/>
+                        <outlet property="mLetter" destination="8Bi-OA-NOF" id="FCK-Zf-FlV"/>
+                        <outlet property="nLetter" destination="A7D-p7-erc" id="bgJ-jH-s0b"/>
+                        <outlet property="oLetter" destination="FTe-qF-SbQ" id="c4m-YC-hia"/>
+                        <outlet property="outcomeBlock" destination="4ec-93-gzd" id="WPq-E0-txq"/>
+                        <outlet property="outcomeLabel" destination="FPa-Fh-n3l" id="TEk-Dx-1Lx"/>
+                        <outlet property="pLetter" destination="D9J-up-vTU" id="JIN-f6-QtM"/>
+                        <outlet property="playAgainButton" destination="LRf-yG-bBW" id="Q0n-t0-9IW"/>
+                        <outlet property="qLetter" destination="Y2O-21-PT8" id="Phs-kA-6U2"/>
+                        <outlet property="rLetter" destination="T4G-br-CUb" id="XCd-HP-Cae"/>
+                        <outlet property="renegade" destination="f0j-tx-R00" id="5Yh-zW-U1Z"/>
+                        <outlet property="resultLabel" destination="g6N-si-bBd" id="DmL-Nt-nmW"/>
+                        <outlet property="sLetter" destination="RIt-4w-501" id="KMK-hr-psV"/>
+                        <outlet property="tLetter" destination="QPi-hs-j2M" id="jxw-2F-Tvd"/>
+                        <outlet property="uLetter" destination="3uR-Hs-Wkj" id="S1j-Sw-f3Z"/>
+                        <outlet property="vLetter" destination="qNa-PK-VvS" id="ZLV-dE-mTz"/>
+                        <outlet property="wLetter" destination="ULT-mx-6O3" id="4Ak-sk-ze5"/>
+                        <outlet property="wordPresentation" destination="uZd-bx-g2p" id="EkW-y5-cvs"/>
+                        <outlet property="xLetter" destination="7Al-vc-4Mp" id="2ai-uo-hiP"/>
+                        <outlet property="yLetter" destination="NBl-Iz-PQ5" id="LHY-Mx-cNb"/>
+                        <outlet property="zLetter" destination="HeF-rB-m3e" id="eBg-MM-oNa"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.5" y="205"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="6BulletCounter" width="144" height="144"/>
+        <image name="aLetter" width="32" height="32"/>
+        <image name="bLetter" width="32" height="32"/>
+        <image name="cLetter" width="32" height="32"/>
+        <image name="cowboy" width="5000" height="5000"/>
+        <image name="dLetter" width="32" height="32"/>
+        <image name="eLetter" width="32" height="32"/>
+        <image name="exitButton" width="3525" height="3525"/>
+        <image name="fLetter" width="32" height="32"/>
+        <image name="gLetter" width="32" height="32"/>
+        <image name="gactus" width="320" height="320"/>
+        <image name="gunslingerTitle" width="100" height="10"/>
+        <image name="hLetter" width="32" height="32"/>
+        <image name="iLetter" width="32" height="32"/>
+        <image name="jLetter" width="32" height="32"/>
+        <image name="kLetter" width="32" height="32"/>
+        <image name="lletter" width="32" height="32"/>
+        <image name="longFrame" width="3840" height="960"/>
+        <image name="mLetter" width="32" height="32"/>
+        <image name="nLetter" width="32" height="32"/>
+        <image name="oLetter" width="32" height="32"/>
+        <image name="pLetter" width="32" height="32"/>
+        <image name="playAgain" width="128" height="64"/>
+        <image name="qLetter" width="32" height="32"/>
+        <image name="rLetter" width="32" height="32"/>
+        <image name="renegade" width="5000" height="5000"/>
+        <image name="sLetter" width="32" height="32"/>
+        <image name="sceneNew" width="800" height="560"/>
+        <image name="tLetter" width="32" height="32"/>
+        <image name="uLetter" width="32" height="32"/>
+        <image name="vLetter" width="32" height="32"/>
+        <image name="wLetter" width="32" height="32"/>
+        <image name="woodBlock" width="4500" height="3630"/>
+        <image name="woodwall" width="150" height="270"/>
+        <image name="xLetter" width="32" height="32"/>
+        <image name="yLetter" width="32" height="32"/>
+        <image name="youLost" width="320" height="80"/>
+        <image name="zLetter" width="32" height="32"/>
+        <sound name="gunShot"/>
+    </resources>
+</document>

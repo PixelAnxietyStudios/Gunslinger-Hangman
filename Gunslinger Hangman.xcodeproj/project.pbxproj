@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D11E683B27ACEC0300E9774F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E683A27ACEC0300E9774F /* AppDelegate.swift */; };
+		D11E683D27ACEC0300E9774F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E683C27ACEC0300E9774F /* ViewController.swift */; };
+		D11E683F27ACEC0400E9774F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11E683E27ACEC0400E9774F /* Assets.xcassets */; };
+		D11E684227ACEC0400E9774F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11E684027ACEC0400E9774F /* Main.storyboard */; };
+		D11E684D27ACEC0400E9774F /* Gunslinger_HangmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E684C27ACEC0400E9774F /* Gunslinger_HangmanTests.swift */; };
+		D11E685727ACEC0400E9774F /* Gunslinger_HangmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E685627ACEC0400E9774F /* Gunslinger_HangmanUITests.swift */; };
+		D11E685927ACEC0400E9774F /* Gunslinger_HangmanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E685827ACEC0400E9774F /* Gunslinger_HangmanUITestsLaunchTests.swift */; };
+		D11E686627ACF0FF00E9774F /* hangman .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11E686527ACF0FF00E9774F /* hangman .storyboard */; };
+		D11E686A27AF06A900E9774F /* hangmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E686927AF06A900E9774F /* hangmanViewController.swift */; };
+		D11E686D27AF20CE00E9774F /* gunShot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D11E686C27AF20CE00E9774F /* gunShot.mp3 */; };
+		D197F97627B6199D00E93254 /* wordCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197F97527B6199D00E93254 /* wordCheck.swift */; };
+		D19BCB3B27B82D57001C4152 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19BCB3A27B82D57001C4152 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D11E684927ACEC0400E9774F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11E682F27ACEC0300E9774F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D11E683627ACEC0300E9774F;
+			remoteInfo = "Gunslinger Hangman";
+		};
+		D11E685327ACEC0400E9774F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11E682F27ACEC0300E9774F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D11E683627ACEC0300E9774F;
+			remoteInfo = "Gunslinger Hangman";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D11E683727ACEC0300E9774F /* Gunslinger Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gunslinger Hangman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11E683A27ACEC0300E9774F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D11E683C27ACEC0300E9774F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D11E683E27ACEC0400E9774F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D11E684127ACEC0400E9774F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D11E684327ACEC0400E9774F /* Gunslinger_Hangman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gunslinger_Hangman.entitlements; sourceTree = "<group>"; };
+		D11E684827ACEC0400E9774F /* Gunslinger HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gunslinger HangmanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11E684C27ACEC0400E9774F /* Gunslinger_HangmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gunslinger_HangmanTests.swift; sourceTree = "<group>"; };
+		D11E685227ACEC0400E9774F /* Gunslinger HangmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gunslinger HangmanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11E685627ACEC0400E9774F /* Gunslinger_HangmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gunslinger_HangmanUITests.swift; sourceTree = "<group>"; };
+		D11E685827ACEC0400E9774F /* Gunslinger_HangmanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gunslinger_HangmanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D11E686527ACF0FF00E9774F /* hangman .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "hangman .storyboard"; sourceTree = "<group>"; };
+		D11E686927AF06A900E9774F /* hangmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmanViewController.swift; sourceTree = "<group>"; };
+		D11E686C27AF20CE00E9774F /* gunShot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gunShot.mp3; sourceTree = "<group>"; };
+		D197F97527B6199D00E93254 /* wordCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordCheck.swift; sourceTree = "<group>"; };
+		D197F97D27B7543100E93254 /* Gunslinger-Hangman-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gunslinger-Hangman-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D19BCB3A27B82D57001C4152 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D11E683427ACEC0300E9774F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E684527ACEC0400E9774F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E684F27ACEC0400E9774F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D11E682E27ACEC0300E9774F = {
+			isa = PBXGroup;
+			children = (
+				D11E683927ACEC0300E9774F /* Gunslinger Hangman */,
+				D11E684B27ACEC0400E9774F /* Gunslinger HangmanTests */,
+				D11E685527ACEC0400E9774F /* Gunslinger HangmanUITests */,
+				D11E683827ACEC0300E9774F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D11E683827ACEC0300E9774F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D11E683727ACEC0300E9774F /* Gunslinger Hangman.app */,
+				D11E684827ACEC0400E9774F /* Gunslinger HangmanTests.xctest */,
+				D11E685227ACEC0400E9774F /* Gunslinger HangmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D11E683927ACEC0300E9774F /* Gunslinger Hangman */ = {
+			isa = PBXGroup;
+			children = (
+				D197F97D27B7543100E93254 /* Gunslinger-Hangman-Info.plist */,
+				D11E686B27AF208D00E9774F /* sounds */,
+				D11E683A27ACEC0300E9774F /* AppDelegate.swift */,
+				D11E683C27ACEC0300E9774F /* ViewController.swift */,
+				D11E686927AF06A900E9774F /* hangmanViewController.swift */,
+				D197F97527B6199D00E93254 /* wordCheck.swift */,
+				D19BCB3A27B82D57001C4152 /* Constants.swift */,
+				D11E683E27ACEC0400E9774F /* Assets.xcassets */,
+				D11E684027ACEC0400E9774F /* Main.storyboard */,
+				D11E686527ACF0FF00E9774F /* hangman .storyboard */,
+				D11E684327ACEC0400E9774F /* Gunslinger_Hangman.entitlements */,
+			);
+			path = "Gunslinger Hangman";
+			sourceTree = "<group>";
+		};
+		D11E684B27ACEC0400E9774F /* Gunslinger HangmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				D11E684C27ACEC0400E9774F /* Gunslinger_HangmanTests.swift */,
+			);
+			path = "Gunslinger HangmanTests";
+			sourceTree = "<group>";
+		};
+		D11E685527ACEC0400E9774F /* Gunslinger HangmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D11E685627ACEC0400E9774F /* Gunslinger_HangmanUITests.swift */,
+				D11E685827ACEC0400E9774F /* Gunslinger_HangmanUITestsLaunchTests.swift */,
+			);
+			path = "Gunslinger HangmanUITests";
+			sourceTree = "<group>";
+		};
+		D11E686B27AF208D00E9774F /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D11E686C27AF20CE00E9774F /* gunShot.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D11E683627ACEC0300E9774F /* Gunslinger Hangman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11E685C27ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger Hangman" */;
+			buildPhases = (
+				D11E683327ACEC0300E9774F /* Sources */,
+				D11E683427ACEC0300E9774F /* Frameworks */,
+				D11E683527ACEC0300E9774F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gunslinger Hangman";
+			productName = "Gunslinger Hangman";
+			productReference = D11E683727ACEC0300E9774F /* Gunslinger Hangman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D11E684727ACEC0400E9774F /* Gunslinger HangmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11E685F27ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger HangmanTests" */;
+			buildPhases = (
+				D11E684427ACEC0400E9774F /* Sources */,
+				D11E684527ACEC0400E9774F /* Frameworks */,
+				D11E684627ACEC0400E9774F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D11E684A27ACEC0400E9774F /* PBXTargetDependency */,
+			);
+			name = "Gunslinger HangmanTests";
+			productName = "Gunslinger HangmanTests";
+			productReference = D11E684827ACEC0400E9774F /* Gunslinger HangmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D11E685127ACEC0400E9774F /* Gunslinger HangmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11E686227ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger HangmanUITests" */;
+			buildPhases = (
+				D11E684E27ACEC0400E9774F /* Sources */,
+				D11E684F27ACEC0400E9774F /* Frameworks */,
+				D11E685027ACEC0400E9774F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D11E685427ACEC0400E9774F /* PBXTargetDependency */,
+			);
+			name = "Gunslinger HangmanUITests";
+			productName = "Gunslinger HangmanUITests";
+			productReference = D11E685227ACEC0400E9774F /* Gunslinger HangmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D11E682F27ACEC0300E9774F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D11E683627ACEC0300E9774F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D11E684727ACEC0400E9774F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D11E683627ACEC0300E9774F;
+					};
+					D11E685127ACEC0400E9774F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D11E683627ACEC0300E9774F;
+					};
+				};
+			};
+			buildConfigurationList = D11E683227ACEC0300E9774F /* Build configuration list for PBXProject "Gunslinger Hangman" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D11E682E27ACEC0300E9774F;
+			productRefGroup = D11E683827ACEC0300E9774F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D11E683627ACEC0300E9774F /* Gunslinger Hangman */,
+				D11E684727ACEC0400E9774F /* Gunslinger HangmanTests */,
+				D11E685127ACEC0400E9774F /* Gunslinger HangmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D11E683527ACEC0300E9774F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11E686627ACF0FF00E9774F /* hangman .storyboard in Resources */,
+				D11E686D27AF20CE00E9774F /* gunShot.mp3 in Resources */,
+				D11E683F27ACEC0400E9774F /* Assets.xcassets in Resources */,
+				D11E684227ACEC0400E9774F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E684627ACEC0400E9774F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E685027ACEC0400E9774F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D11E683327ACEC0300E9774F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19BCB3B27B82D57001C4152 /* Constants.swift in Sources */,
+				D197F97627B6199D00E93254 /* wordCheck.swift in Sources */,
+				D11E686A27AF06A900E9774F /* hangmanViewController.swift in Sources */,
+				D11E683D27ACEC0300E9774F /* ViewController.swift in Sources */,
+				D11E683B27ACEC0300E9774F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E684427ACEC0400E9774F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11E684D27ACEC0400E9774F /* Gunslinger_HangmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E684E27ACEC0400E9774F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11E685727ACEC0400E9774F /* Gunslinger_HangmanUITests.swift in Sources */,
+				D11E685927ACEC0400E9774F /* Gunslinger_HangmanUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D11E684A27ACEC0400E9774F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D11E683627ACEC0300E9774F /* Gunslinger Hangman */;
+			targetProxy = D11E684927ACEC0400E9774F /* PBXContainerItemProxy */;
+		};
+		D11E685427ACEC0400E9774F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D11E683627ACEC0300E9774F /* Gunslinger Hangman */;
+			targetProxy = D11E685327ACEC0400E9774F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D11E684027ACEC0400E9774F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D11E684127ACEC0400E9774F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D11E685A27ACEC0400E9774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D11E685B27ACEC0400E9774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D11E685D27ACEC0400E9774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gunslinger Hangman/Gunslinger_Hangman.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gunslinger-Hangman-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-Hangman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D11E685E27ACEC0400E9774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gunslinger Hangman/Gunslinger_Hangman.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gunslinger-Hangman-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-Hangman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D11E686027ACEC0400E9774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-HangmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gunslinger Hangman.app/Contents/MacOS/Gunslinger Hangman";
+			};
+			name = Debug;
+		};
+		D11E686127ACEC0400E9774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-HangmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gunslinger Hangman.app/Contents/MacOS/Gunslinger Hangman";
+			};
+			name = Release;
+		};
+		D11E686327ACEC0400E9774F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-HangmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Gunslinger Hangman";
+			};
+			name = Debug;
+		};
+		D11E686427ACEC0400E9774F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PixelAnxietyStudios.Gunslinger-HangmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Gunslinger Hangman";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D11E683227ACEC0300E9774F /* Build configuration list for PBXProject "Gunslinger Hangman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11E685A27ACEC0400E9774F /* Debug */,
+				D11E685B27ACEC0400E9774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D11E685C27ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger Hangman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11E685D27ACEC0400E9774F /* Debug */,
+				D11E685E27ACEC0400E9774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D11E685F27ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger HangmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11E686027ACEC0400E9774F /* Debug */,
+				D11E686127ACEC0400E9774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D11E686227ACEC0400E9774F /* Build configuration list for PBXNativeTarget "Gunslinger HangmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11E686327ACEC0400E9774F /* Debug */,
+				D11E686427ACEC0400E9774F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D11E682F27ACEC0300E9774F /* Project object */;
+}

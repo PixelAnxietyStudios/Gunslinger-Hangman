@@ -9,3 +9,5 @@ The enemy has 6 bullets before they succesfully shoot you, so make sure you get 
 All the source code is under the file "Gunslinger hangman"
 
 This is a MacOS exclusive that you can download in the releases area: https://github.com/PixelAnxietyStudios/Gunslinger-Hangman/releases/tag/hackman
+
+For players using light mode please download this updated version: https://github.com/PixelAnxietyStudios/Gunslinger-Hangman/releases/tag/hackmanLightMode

@@ -13,6 +13,8 @@ This is a MacOS exclusive that you can download in the releases area: https://gi
 
 For players using light mode please download this updated version: https://github.com/PixelAnxietyStudios/Gunslinger-Hangman/releases/tag/hackmanLightMode
 
+Note: you may have to go into Finder and open it by right clicking and allowing, as it is an app downloaded from the internet.
+
 In order to replicate on your own version of xcode, you can download all files under 'releases', drag them into a folder, 
 then go to xcode->open a project or file->select the folder, and open. You may need to provide your own API key. 
 

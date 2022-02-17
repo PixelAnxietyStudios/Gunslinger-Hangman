@@ -474,7 +474,7 @@ class hangmanViewController: NSViewController {
     //function to fetch word from the API
     func fetchWord() {
      
-        let url = URL(string: "http://clemsonhackman.com/api/word?key=\(API_KEY)")!
+        let url = URL(string: "https://clemsonhackman.com/api/word?key=\(API_KEY)")!
         Task {
         let (data,_) = try await URLSession.shared.data(from: url)
             let JSON = (String(data: data, encoding: .utf8)!) //gets the JSON data and stores it in a var
